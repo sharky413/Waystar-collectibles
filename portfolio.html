@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waystar Collectibles - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="asset/portfolio.css">
+    <link href="asset/icons/favicon.ico" rel="icon">
+</head>
+
+<body class="bg-[#1A3C34] text-white font-sans scroll-smooth">
+<!-- Navigation-->
+<nav class="fixed top-0 w-full bg-[#1A3C34]/80 backdrop-blur-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center">
+        <img src="asset/icons/waystar_s.png" alt="Waystar Collectibles Logo" class="h-12 mr-auto">
+        <div class="space-x-6 flex items-center">
+            <a href="index.html#home" class="hover:text-[#FFD700] transition-colors">Home</a>
+            <a href="index.html#collectibles" class="hover:text-[#FFD700] transition-colors">Collectibles</a>
+            <a href="portfolio.html" class="text-[#FFD700]">Portfolio</a>
+            <a href="index.html#about" class="hover:text-[#FFD700] transition-colors">About Me</a>
+            <a href="index.html#how-it-works" class="hover:text-[#FFD700] transition-colors">How It Works</a>
+            <a href="index.html#contact" class="hover:text-[#FFD700] transition-colors">Contacts</a>
+            <div class="text-[#FFD700] ml-4"> <!-- Changed from <a> to <div> -->
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 1a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2V3a2 2 0 0 0-2-2H8zm0 2h8v2H8V3zm-4 4h16v12H4V7zm8 2a4 4 0 0 0-4 4c0 1.5.83 2.79 2 3.46V17a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.54c1.17-.67 2-1.96 2-3.46a4 4 0 0 0-4-4zm0 2a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Portfolio Hero Section -->
+<section class="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative" style="background-image: url('asset/img/backshot.png');">
+    <div class="absolute inset-0 bg-[#1A3C34]/70 z-0"></div>
+    <div class="max-w-6xl mx-auto px-4 relative z-10 w-full text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in portfolio-hover">
+            Portfolio
+        </h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto flex flex-wrap justify-center gap-2">
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">Explore</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">our</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">curated</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">collection</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">of</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">high-value</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700] dance-hover">collectibles</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">with</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">proven</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">appreciation</span>
+            <span class="transition-all duration-300 hover:-translate-y-1 hover:text-[#FFD700]">potential.</span>
+        </p>
+        
+        
+        <!-- Secondary Navigation with rectangular buttons -->
+        <div class="flex justify-center space-x-4 mt-12">
+            <a href="#categories" class="bg-[#1A3C34]/80 hover:bg-[#1A3C34] px-6 py-3 rounded-lg border border-[#FFD700]/30 text-white hover:text-[#FFD700] transition-colors flex items-center">
+                <span class="w-2 h-2 bg-[#FFD700] rounded-full mr-2"></span>
+                Categories
+            </a>
+            <a href="#performance" class="bg-[#1A3C34]/80 hover:bg-[#1A3C34] px-6 py-3 rounded-lg border border-[#FFD700]/30 text-white hover:text-[#FFD700] transition-colors flex items-center">
+                <span class="w-2 h-2 bg-[#FFD700] rounded-full mr-2"></span>
+                Performance
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top Button -->
+<div class="fixed bottom-6 right-6 z-40">
+    <button id="backToTop" class="bg-[#1A3C34]/90 hover:bg-[#1A3C34] text-[#FFD700] p-3 rounded-full border border-[#FFD700]/50 shadow-lg transition-all opacity-0 invisible hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+</div>
+
+<!-- Portfolio Categories -->
+<section id="categories" class="py-20 bg-[#1A3C34]">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center"> Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Collectible 1: Antiques -->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/1920's Darlot Brass Lens.webp" alt="Antiques" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Antiques</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Antiques</h3>
+                        <p class="mb-4 text-black">Rare and valuable historical artifacts from 18th-20th centuries</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collectible 2: Autographs -->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/John Elway Autographed The Drive by Dave Hobrecht.webp" alt="Autographs" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Autographs</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Autographs</h3>
+                        <p class="mb-4 text-black">Authentic signatures from historical figures and celebrities</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collectible 3: Comics -->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/DC Comics DC Universe Rebirth 1.webp" alt="Comics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Comics</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Comics</h3>
+                        <p class="mb-4 text-black">Golden and Silver Age comics in mint condition with CGC certification</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collectible 4: Cards-->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/Pokemon Terastal Fest Eevee + 8 Evolutions Graded PSA Gem Mt 10.webp" alt="Cards" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Cards</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Cards</h3>
+                        <p class="mb-4 text-black">Authentic cards from major sports leagues</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+     <!-- Collectible 5: Championship Rings -->
+     <div class="relative group overflow-hidden rounded-lg h-64">
+        <img src="asset/img/1966 Green Bay Packers Super Bowl I Ring.webp" alt="Championship Rings" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <h3 class="text-2xl font-bold text-white">Championship Rings</h3>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+            <div class="text-center p-4">
+                <h3 class="text-2xl font-bold mb-2 text-black">Championship Rings</h3>
+                <p class="mb-4 text-black">Authentic championship rings from major sports leagues</p>
+                <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+            </div>
+        </div>
+    </div>
+
+         <!-- Collectible 6: Movies & TV-->
+         <div class="relative group overflow-hidden rounded-lg h-64">
+            <img src="asset/img/The Fast & The Furious Movie Prop Car Plates & Memorabilia.webp" alt="Movies & TV" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <h3 class="text-2xl font-bold text-white">Movies & TV</h3>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                <div class="text-center p-4">
+                    <h3 class="text-2xl font-bold mb-2 text-black">Movies & TV</h3>
+                    <p class="mb-4 text-black">Authentic rare collectibles from iconic movies and TV shows</p>
+                    <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                </div>
+            </div>
+        </div>
+
+            <!-- Collectible 7: Music -->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/Neal Preston Elton John 1974 - Proof Strip.webp" alt="Music" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Music</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Music</h3>
+                        <p class="mb-4 text-black">Rare vinyl records, signed instruments, and music memorabilia</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collectible 8: Sports -->
+            <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/Vin Scully Signed Baseball.webp" alt="Sports" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Sports</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Sports</h3>
+                        <p class="mb-4 text-black">Game-worn jerseys, signed memorabilia, and rare sports collectibles</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Collectible 9: Toys-->
+             <div class="relative group overflow-hidden rounded-lg h-64">
+                <img src="asset/img/2011 Maisto Blue Mini Cooper.webp" alt="Toys" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h3 class="text-2xl font-bold text-white">Toys</h3>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#FFD700]/90">
+                    <div class="text-center p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-black">Championship Rings</h3>
+                        <p class="mb-4 text-black">Authentic championship rings from major sports leagues</p>
+                        <a href="#" class="inline-block bg-[#00493a] text-white px-4 py-2 rounded-lg">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Performance Chart Section -->
+<section id="performance" class="py-20 bg-[#d4d6cf] text-black">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Performance</h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h3 class="text-2xl font-bold mb-6">5-Year Appreciation</h3>
+            
+            <!-- Chart Description -->
+            <div class="mb-8 p-4 bg-[#f8f9fa] rounded-lg border-l-4 border-[#FFD700]">
+                <p class="text-[#00493a]">
+                    This chart tracks our portfolio's remarkable growth over the past five years, 
+                    showing a consistent upward trajectory from $12M in 2019 to $42M in 2023. 
+                    The 250% total appreciation demonstrates the strong performance of rare collectibles 
+                    as alternative investments, with particularly strong growth in post-pandemic years.
+                </p>
+            </div>
+            
+            <div class="relative h-96">
+                <canvas id="performanceChart"></canvas>
+            </div>
+            <div class="mt-6 text-center text-sm text-gray-600">
+                *Based on average appreciation across all collectible categories in our portfolio
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Load scripts before closing body tag -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="asset/portfolio.js"></script>
+</body>
+</html>

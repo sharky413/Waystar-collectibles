@@ -1,0 +1,183 @@
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Custom section background colors */
+#new-arrivals {
+    background-color: #d4d6cf; /* Deep navy blue */
+}
+
+#collectibles {
+    background-color: #d4d6cf; /* Rich charcoal */
+}
+
+/* Loading Animation Styles */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1A3C34;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.page-transition.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.waystar-loader {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.waystar-loader .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-top-color: #FFD700;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.waystar-loader .circle:nth-child(2) {
+    border-top-color: #00493a;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    animation: spinReverse 1.2s linear infinite;
+}
+
+/* Ensure smooth transitions for all interactive elements */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Maintain card styling consistency */
+.card {
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+}
+
+/* Page Transition Animation */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A3C34;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.waystar-transition-logo {
+    width: 120px;
+    height: 120px;
+    background-image: url('icons/waystar_s.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.waystar-transition-logo::before,
+.waystar-transition-logo::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.waystar-transition-logo::before {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border-top-color: #FFD700;
+    animation: spin 1.2s linear infinite;
+}
+
+.waystar-transition-logo::after {
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    border-top-color: #00493a;
+    animation: spinReverse 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+/* Ensure smooth page transitions */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.hover-underline {
+    transition: text-decoration 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFD700; /* Gold color */
+    text-decoration-thickness: 3px; /* Adjust thickness as needed */
+}
