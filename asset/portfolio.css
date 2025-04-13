@@ -1,0 +1,152 @@
+/* New hero section navigation styles */
+.hero-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.hero-navigation a {
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.hero-navigation a:hover {
+    color: #FFD700;
+}
+
+.hero-navigation span {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FFD700;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+
+
+/* Performance Chart Styles */
+#performance {
+    padding: 5rem 0;
+    background-color: #d4d6cf;
+    color: #000;
+}
+
+#performance .max-w-6xl {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#performance h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#performance .bg-white {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+}
+
+#performance h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#performance .relative {
+    position: relative;
+}
+
+#performance .h-96 {
+    height: 24rem;
+}
+
+#performance .text-gray-600 {
+    color: #4b5563;
+}
+
+#performance .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+#performance .text-center {
+    text-align: center;
+}
+
+#performance .mt-6 {
+    margin-top: 1.5rem;
+}
+/* Chart Description Styles */
+.chart-description {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #FFD700;
+    border-radius: 0.5rem;
+}
+
+.chart-description p {
+    color: #00493a;
+    line-height: 1.6;
+}
+
+/* Back to Top Button */
+#backToTop {
+    transition: all 0.3s ease;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    transform: translateY(-3px);
+}
+
+/* Dance Animation */
+@keyframes dance {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    25% { transform: rotate(5deg) translateY(-2px); }
+    50% { transform: rotate(-5deg) translateY(2px); }
+    75% { transform: rotate(3deg) translateY(-1px); }
+}
+
+.dance-hover:hover {
+    animation: dance 0.6s ease-in-out infinite;
+    color: #FFD700;
+}
+/* Portfolio Hover Effect */
+.portfolio-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-hover::after {
+    content: '💫'; /* The star symbol */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position the star to the right of the word */
+    margin-left: 10px;
+    opacity: 0; /* Initially hidden */
+    font-size: 24px;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.portfolio-hover:hover::after {
+    opacity: 1; /* Show the star when hovered */
+}
